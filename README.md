@@ -9,6 +9,7 @@ This is a web-app to visualize some common sorting algorithms, which are:
 5. Merge sort
 
 The size of the Array can be varied between 1 and 200. The Array holds Objects with a number of 1 to 100 (the height in %) and a color (the color of the bar).
+
 Possible colors are:
 
 1. blue: default
