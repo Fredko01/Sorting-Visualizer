@@ -14,7 +14,7 @@ Possible colors are:
 
 1. blue: default
 2. light blue: selected
-3. purple: sorted but the bar might not be at the correct position or another selected.
+3. purple: sorted but the bar might not be at the correct position or selected.
 4. green: sorted and the bar is at the correct position.
 
 The speed of the sorting algorithms can be varied between 1 and 300, which is a delay in ms. The speed can be varied while the sorting algorithm is running.
