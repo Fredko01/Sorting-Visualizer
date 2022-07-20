@@ -1,6 +1,6 @@
 # Sorting Visualization
 
-This is a web-app which visualizes some common sorting algorithms, which are:
+This is a web-app to visualizes some common sorting algorithms, which are:
 
 1. Insertion sort
 2. Selection sort
