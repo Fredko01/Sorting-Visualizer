@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sorting Algorithm Visualization</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="headline">Sorting Algorithm Visualization</h1>
+      <div class="navbar">
+        <button
+          class="navbar_options"
+          id="generate_array"
+          onclick="{if(!sortingAlgorithmActive) generateNewArray()}"
+        >
+          Generate New Array
+        </button>
+        <div class="navbar_settings">
+          <div class="navbar_slider">
+            <p class="size">Change Array Size</p>
+            <input
+              id="size_slider"
+              type="range"
+              min="10"
+              max="200"
+              step="1"
+              value="75"
+            />
+          </div>
+
+          <div class="navbar_slider">
+            <div class="speed">Change Sorting Speed</div>
+            <input
+              id="speed_slider"
+              type="range"
+              min="1"
+              max="300"
+              step="1"
+              value="150"
+            />
+          </div>
+        </div>
+        <div class="navbar_algorithms">
+          <button
+            class="navbar_options"
+            id="insertion_sort"
+            onclick="{sortingAlgorithmActive ? stopSortingAlgorithm = true : insertionSort()}"
+          >
+            Insertion Sort
+          </button>
+          <button
+            class="navbar_options"
+            id="selection_sort"
+            onclick="{sortingAlgorithmActive ? stopSortingAlgorithm = true : selectionSort()}"
+          >
+            Selection Sort
+          </button>
+          <button
+            class="navbar_options"
+            id="bubble_sort"
+            onclick="{sortingAlgorithmActive ? stopSortingAlgorithm = true : bubbleSort()}"
+          >
+            Bubble Sort
+          </button>
+          <button
+            class="navbar_options"
+            id="quick_sort"
+            onclick="{sortingAlgorithmActive ? stopSortingAlgorithm = true : quickSort()}"
+          >
+            Quick Sort
+          </button>
+          <button
+            class="navbar_options"
+            id="merge_sort"
+            onclick="{sortingAlgorithmActive ? stopSortingAlgorithm = true : mergeSort()}"
+          >
+            Merge Sort
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="diagram" id="diagram">
+        <!-- in here the bars are dynamically created -->
+      </div>
+    </div>
+  </body>
+  <script src="scripts/visualization.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <script src="scripts/sortingAlgorithms/insertionsort.js"></script>
+  <script src="scripts/sortingAlgorithms/selectionsort.js"></script>
+  <script src="scripts/sortingAlgorithms/bubblesort.js"></script>
+  <script src="scripts/sortingAlgorithms/quicksort.js"></script>
+  <script src="scripts/sortingAlgorithms/mergesort.js"></script>
+</html>
