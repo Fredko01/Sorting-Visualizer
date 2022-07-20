@@ -21,4 +21,4 @@ The speed of the sorting algorithms can be varied between 1 and 300, which is a 
 
 To stop a sorting algorithm, one of the sorting algorithm buttons must be clicked e.g.: INSERTION SORT.
 
-Link to live version: link is available later...
+Link to live version: https://fredko01.github.io/SortingVisualization/
