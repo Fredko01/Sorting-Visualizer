@@ -1,4 +1,4 @@
-# Sorting Visualization
+# Sorting-Visualizer
 
 This is a web-app to visualize some common sorting algorithms, which are:
 
