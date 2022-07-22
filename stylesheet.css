@@ -16,6 +16,7 @@ body {
   background: var(--background-color);
   margin: 5px;
   padding: 0;
+  height: calc(100vh - 20px);
 
   text-transform: uppercase;
   text-align: center;
@@ -25,7 +26,7 @@ body {
 
 header {
   padding: 0;
-  height: 150px;
+  min-height: 150px;
   width: 100%;
   border-radius: 10px;
   background: var(--dark-blue);
@@ -93,7 +94,8 @@ button:hover {
 
 .container {
   width: 100%;
-  height: 800px;
+  height: auto;
+  min-height: calc(100vh - 190px);
 
   display: flex;
   justify-content: center;
@@ -102,7 +104,7 @@ button:hover {
 
 .diagram {
   width: 80%;
-  height: 90%;
+  height: calc(100vh - 190px - 100px);
   background: var(--background-color);
   border-radius: 10px;
   border: 2px solid var(--dark-blue);
